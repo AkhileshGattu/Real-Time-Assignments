@@ -16,7 +16,7 @@ object SentenceCount {
     val counts = textFile.map(word => (word, 1))
       .reduceByKey(_ + _)
       .sortByKey(true,1)
-    counts.saveAsTextFile("E:\\MS\\RealTimeBigDataAnalytics\\SentenceCount")
+    counts.saveAsTextFile("E:\\MS\\RealTimeBigDataAnalytics\\SparkSentenceCount")
 
   }
 
